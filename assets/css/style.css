@@ -844,7 +844,7 @@ section {
   position: relative;
   height: 150vh;
   top: 120px;
-  bottom: 120px;
+ 
 }
 .admin-wrapper{
   display: block;
@@ -861,10 +861,11 @@ section {
   border-radius: 8px;
 }
 .col2 > img:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: pointer;
   transition: all 2s;
 }
+
 .team-wrapper{
   display: flex;
   flex-direction: row;
@@ -893,19 +894,36 @@ section {
   transform: scale(1.1);
   transition: all 2s;
 }
-
-
+.section-header{
+  position: relative;
+  top: 50px;
+  display: block;
+  text-align: center;
+}
+.section-header > h3{
+  color: #cda45e; 
+}
+.header-line{
+  position: relative;
+  left: 45%;
+  border-top: 2px solid yellow;
+  width: 50px;  
+}
 @media (max-width: 1024px) {
   .admin{
-    height: 300vh;
+    height: 350vh;
   }
   .row2{
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
   }
   .team-wrapper{
     display: flex;
     flex-direction: column;
+  }
+  .col2 > img{
+    width: 100%;
   }
  
 }
