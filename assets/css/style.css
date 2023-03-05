@@ -535,41 +535,9 @@ h6 {
 #hero .btn-book {
   margin-left: 15px;
 }
-.news{
-  background: #EDE9D0;
-  border: 2px solid black;
-  border-radius: 15px;
-  color: black;
-  padding: 20px;
-  opacity: 0.5;
-  width: 500px;
-  height: 500px;
-  position: relative;
-  top: 25px;
 
-}
-.marquee{
-  margin-bottom: 10px;
-}
-.news  h2{
-  color: red;
-  
-  padding-bottom: 20px;
-}
-.news, .headlines{
-  color: black;
-  border-bottom: 2px solid rgb(132, 40, 40);
 
-}
-.news, .headlines > a{
-  color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-left: 50px;
-}
-.news, .headlines, a:hover{
-  cursor: pointer;
- 
-}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -728,6 +696,41 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+}
+/*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+.news-container{
+  display: flex;
+  gap: 90px;
+  padding: 20px;
+}
+.news-container > h2{
+  padding: 20px;
+}
+.news-header{
+  border: 2px solid yellow;
+  width: 100px;
+}
+.news  h2{
+  color: red;
+  
+  padding-bottom: 20px;
+}
+.news, .headlines{
+  color: black;
+  margin-top: 10px;
+  
+
+}
+.news, .headlines > a{
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+.news, .headlines, a:hover{
+  cursor: pointer;
+  color: red;
 }
 
 /*--------------------------------------------------------------
